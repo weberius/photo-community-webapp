@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Beschreibung",
+        "file": "description.txt"
+    },
+    {
+        "title": "Analyse",
+        "file": "analysis.txt"
+    },
+    {
+        "title": "Interpretation",
+        "file": "interpretation.txt"
+    },
+    {
+        "title": "Bewertung",
+        "file": "evaluation.txt"
+    },
+    {
+        "title": "Zusammenfassung",
+        "file": "summary.txt"
+    }
+]

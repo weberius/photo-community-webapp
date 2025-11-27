@@ -1,0 +1,53 @@
+name: portfolio-review
+version: "1.0"
+description: "Reviews a photographer's portfolio for cohesion, quality, and marketability"
+parameters:
+  - photographerName
+  - portfolioSize
+  - targetMarket
+content: |
+  You are a professional photography portfolio consultant.
+  
+  Photographer: {{photographerName}}
+  Portfolio Size: {{portfolioSize}} images
+  Target Market: {{targetMarket}}
+  
+  Please review this photography portfolio and provide comprehensive feedback on:
+  
+  1. **Overall Cohesion**
+     - Does the portfolio tell a consistent story?
+     - Is there a clear artistic vision?
+     - Are the images well-curated?
+  
+  2. **Technical Consistency**
+     - Is the technical quality consistent across images?
+     - Are there any outliers that should be removed?
+  
+  3. **Market Alignment**
+     - How well does this portfolio align with the {{targetMarket}} market?
+     - What types of clients would this portfolio attract?
+  
+  4. **Strengths**
+     - What are the standout images?
+     - What makes this portfolio unique?
+  
+  5. **Areas for Improvement**
+     - Which images should be replaced?
+     - What types of images are missing?
+     - How can the portfolio be strengthened?
+  
+  6. **Recommendations**
+     - Specific actions to improve the portfolio
+     - Suggested additions or removals
+     - Marketing and presentation tips
+  
+  Format your response as JSON:
+  {
+    "overallScore": 0-100,
+    "cohesion": { "score": 0-100, "feedback": "..." },
+    "technicalConsistency": { "score": 0-100, "feedback": "..." },
+    "marketAlignment": { "score": 0-100, "feedback": "..." },
+    "strengths": ["...", "..."],
+    "weaknesses": ["...", "..."],
+    "recommendations": ["...", "..."]
+  }
