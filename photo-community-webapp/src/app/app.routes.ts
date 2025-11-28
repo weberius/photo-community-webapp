@@ -7,7 +7,7 @@ import { Research } from './components/research/research';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'browser', pathMatch: 'full' },
-    { path: 'bildbesprechung', component: ImageAnalysisComponent },
+    { path: 'upload', component: ImageAnalysisComponent },
     { path: 'browser', component: PhotoBrowser },
     { path: 'review', component: Review },
     { path: 'discussion', component: Discussion },
