@@ -432,10 +432,3 @@ docker run -p 8080:8080 \
   ai-core-service
 ```
 
-## 📞 Support
-
-For issues or questions, contact the AI Core Service team at support@example.com
-
-## 📄 License
-
-Copyright © 2024 Example Company. All rights reserved.

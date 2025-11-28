@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+  flyway:
+    enabled: false
+
+ai:
+  default-provider: gemini
+  gemini:
+    api-key: test-gemini-key
+    api-url: http://localhost:8080/gemini
+    timeout-seconds: 30
+  openai:
+    api-key: test-openai-key
+    api-url: http://localhost:8080/openai
+    model: gpt-4
+    timeout-seconds: 30
+
+logging:
+  level:
+    root: WARN
+    com.example.aicore: INFO
